@@ -1,15 +1,45 @@
 .header, .footer {
-    height: 75px;
-    min-height: 75px;
-    max-height: 75px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
 }
 
 #main [class*='col-md-3'] {
-    height: 500px;
-    min-height: 500px;
-    max-height: 500px;}
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
 
 #main [class*='col-md-9'] {
-        height: 500px;
-        min-height: 500px;
-        max-height: 500px;}
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+#row1{
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+#main #row2 [class*='col-md-3'] {
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+#main #row3 [class*='col-md-3'] {
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+#main [class*='col-md-8'] {
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
+#main [class*='col-md-2'] {
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
