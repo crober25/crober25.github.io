@@ -1,8 +1,24 @@
 .header, .footer {
     height: 100px;
-    min-height: 100px;
     max-height: 100px;
+    min-height: 100px;
 }
+
+.header {
+    margin-top: 15px;
+}
+
+.middleColumn {
+    height: 400px;
+    max-height: 400px;
+    min-height: 400px;
+}
+
+body {
+    font-size: 36px;
+    font-weight: bold;
+}
+
 
 #main [class*='col-md-3'] {
     height: 600px;
@@ -44,7 +60,28 @@
     max-height: 600px;
 }
 
-body {
-    font-size: 36px;
-    font-weight: bold;
-}
+
+    .mainThreeColumns {
+        height: 600px;
+        min-height: 600px;
+        max-height: 600px;
+    }
+
+    .mainOneRow,
+    .mainThreeRow {
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    #mainMiddle {
+        height: 220px;
+        min-height: 220px;
+        max-height: 220px;
+    }
+
+    .middleBottomRow {
+        height: 95px;
+        min-height: 95px;
+        max-height: 95px;
+    }
