@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Use more targeted css
+nested columns-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Nesting</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header,
+        .footer {
+            height: 100px;
+            max-height: 100px;
+            min-height: 100px;
+        }
+
+        .header {
+            margin-top: 15px;
+        }
+
+        .middleColumn {
+            height: 400px;
+            max-height: 400px;
+            min-height: 400px;
+        }
+
+        body {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        #main [class*='col-md-3'] {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
+
+        #main [class*='col-md-9'] {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
+
+        #row1 {
+            height: 300px;
+            min-height: 300px;
+            max-height: 300px;
+        }
+
+        #main #row2 [class*='col-md-3'] {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+        }
+
+        #main #row3 [class*='col-md-3'] {
+            height: 95px;
+            min-height: 95px;
+            max-height: 95px;
+        }
+
+        #main [class*='col-md-8'] {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
+
+        #main [class*='col-md-2'] {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
+
+        .mainThreeColumns {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
+
+        .mainOneRow,
+        .mainThreeRow {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+            font-size: 20px;
+        }
+
+        .mainOneRow2 {
+            height: 210px;
+            min-height: 210px;
+            max-height: 210px;
+            font-size: 20px;
+        }
+
+        #mainMiddle {
+            height: 220px;
+            min-height: 220px;
+            max-height: 220px;
+        }
+
+        .middleBottomRow {
+            height: 95px;
+            min-height: 95px;
+            max-height: 95px;
+            font-size: 20px;
+        }
+
+      
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="randomColor col-md-12 header">
+                Mingle Book
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mainThreeColumns randomColor">
+                <div class="row">
+                    <div class="col-md-12 mainOneRow randomColor">
+                        <img src="tom.jpg" alt="Tommy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mainOneRow randomColor">
+                        Hello, my name is Tom and I would love to be your friend.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mainOneRow2 randomColor">
+                        Interests: fighting crime, hanging out with babes, shooting guns, Detroit Tigers <br> Dislikes: crime committers, sun burns, taxes <br> Go Detroit Tigers!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 mainThreeColumns randomColor">
+                <div class="row">
+
+
+                    <div class="col-md-12 randomColor" id="mainMiddle">
+<img src="beach.jpg" alt="beach">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 middleBottomRow randomColor">
+                        Update:
+                    </div>
+                    <div class="col-md-9 middleBottomRow randomColor ">
+                        I have a great pool, anyone who swings by can take a dip.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 middleBottomRow randomColor">
+                        Post Update:
+                    </div>
+                    <div class="col-md-9 middleBottomRow randomColor">
+                        Great day for a BBQ and loving the Detroit Tigers!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 middleBottomRow randomColor">
+                        Post Update:
+                    </div>
+                    <div class="col-md-9 middleBottomRow randomColor">
+                        Single and ready to Mingle
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 middleBottomRow randomColor">
+                        Post Update:
+                    </div>
+                    <div class="col-md-9 middleBottomRow randomColor">
+                        Looking to buy 1981 Ferrari 308
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mainThreeColumns randomColor">
+                <div class="row">
+                    <div class="col-md-12 mainThreeRow randomColor">
+                        <img src="TC-Lurk.jpg" alt="Tommy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mainThreeRow randomColor">
+                        <img src="tom-pipe.jpg" alt="pipe">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mainThreeRow randomColor">
+                        <img src="tphone.jpg" alt="on that phone">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="randomColor col-md-12 footer">
+               All rights belong to Mingle book inc. (2017)
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
