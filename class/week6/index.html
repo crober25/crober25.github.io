@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>week 6</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header {
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+        }
+
+        .firstText {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .secondText img {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .topRow {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        .middleRow {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        .bottomRow {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        #pic1 {
+            max-width: 310px;
+            max-height: 310px;
+            padding-top: 15px;
+            padding-left: 60px;
+        }
+
+        .pic23 {
+            max-width: 175px;
+            max-height: 175px;
+            padding-top: 15px;
+            padding-left: 30px;
+        }
+
+        #pic5 {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .galleryOneRight div {
+            text-align: center;
+        }
+
+        .galleryOneRight img {
+            margin-left: 40%;
+        }
+
+        .relativeParent {
+            position: relative;
+        }
+
+        .relativeParent img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #pic6 {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .relativeParent2 {
+            position: relative;
+        }
+
+        .relativeParent2 img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pic7 {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .pic8 {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        #pic2SidebySide2{
+          left: 30%;
+        }
+
+        #pic2SidebySide1{
+          left: 70%;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 randomColor header">
+            </div>
+            <div class="col-md-6  header">
+            </div>
+            <div class="col-md-1 randomColor header">
+            </div>
+            <div class="col-md-1 randomColor header">
+            </div>
+            <div class="col-md-1 randomColor header">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12  firstText">
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum and other things of that nature... this is the text block section of this webpage. <br>Thank you for visiting my shitty webpage and enjoy your stay.</p>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12  secondText">
+                        <img src="images/pongFace1.jpg" alt="face">
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4  topRow">
+                        <img id="pic1" src="images/pongFace2.jpg" alt="face2">
+                    </div>
+
+                    <div class="col-md-4 randomColor topRow">
+                        <img class="pic23" src="images/pongFace3.jpg" alt="face 3">
+                        <img class="pic23" src="images/pongFace4.jpg" alt="face 4">
+                    </div>
+
+                    <div class="col-md-4 randomColor topRow galleryOneRight ">
+                        <img id="pic5" class="galleryOneRight" src="images/pongFace5.jpg" alt="face 5"> <br> this is a ping pong face.
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 randomColor middleRow gallery relativeParent">
+                        <img id="pic6" class="relativeParent" src="images/pongFace6.jpg" alt="Face6">
+                    </div>
+                    <div class="col-md-4 randomColor middleRow relativeParent2">
+                      <img id="pic2SidebySide2" class="pic7" src="images/pongFace7.jpg" alt="Face 7">
+                      <img id="pic2SidebySide1" class="pic8" src="images/pongFace8.jpg" alt="Face 8">
+                    </div>
+                    <div class="col-md-4 randomColor middleRow">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 randomColor bottomRow">
+
+                    </div>
+
+                    <div class="col-md-4 randomColor bottomRow">
+
+                    </div>
+                    <div class="col-md-4 randomColor bottomRow">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * max + min);
+            }
+
+            $(document).ready(function() {
+
+                var bodyColumns = $(".randomColor");
+
+                bodyColumns.each(function() {
+
+                    $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+                })
+
+                $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+        </script>
+
+</body>
+
+</html>
