@@ -20,9 +20,14 @@
             font-size: 75px;
         }
 
-        .nav{
-          max-height: 50px;
-          min-height: 50px;
+        .nav {
+            max-height: 50px;
+            min-height: 50px;
+        }
+
+        .cars {
+            max-width: 350px;
+            max-height: 350px;
         }
 
         .carRow {
@@ -31,8 +36,27 @@
         }
 
         .carNameRow {
-            max-height: 100px;
-            min-height: 100px;
+            max-height: 75px;
+            min-height: 75px;
+            font-size: 40px;
+        }
+        
+        .textRow {
+            font-size: 14px;
+            font-family: serif;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .larryAndSon {
+            max-width: 350px;
+            min-width: 350px;
+            max-height: 350px;
+            min-height: 350px;
+        }
+
+        .larryText {
+            font-size: 50px;
         }
     </style>
 
@@ -75,62 +99,70 @@
 
         <div class="row">
             <div class="col-md-4 randomColor carRow ">
-
+                <img class="cars" src="images/car1.jpg" alt="bad car">
             </div>
 
             <div class="col-md-4 randomColor carRow ">
-
+                <img class="cars" src="images/car5.jpeg" alt="bad car">
             </div>
 
             <div class="col-md-4 randomColor carRow ">
-
+                <img class="cars" src="images/car2.jpg" alt="bad car">
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-4 randomColor carNameRow ">
-
+                Reliable Cars
             </div>
 
             <div class="col-md-4 randomColor carNameRow ">
-
+                Cool cars
             </div>
 
             <div class="col-md-4 randomColor carNameRow ">
-
+                Amphibious cars
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 randomColor textRow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien ipsum, feugiat ut erat eu, feugiat commodo lectus. Etiam bibendum vitae erat quis ultricies. Etiam hendrerit aliquam ex non efficitur. Vivamus vehicula enim a mi facilisis aliquet.
+                Maecenas at vehicula dolor, id dapibus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut tortor mauris, ultrices a dictum mattis, consequat eget ligula. Aliquam ullamcorper laoreet
+                nibh et sagittis. Maecenas nec dapibus tellus. Nam non felis sit amet justo consequat suscipit. Sed odio dolor, commodo in tellus et, finibus tristique tortor. Morbi accumsan varius magna, eget dapibus massa viverra nec. Curabitur tincidunt
+                auctor ipsum sit amet convallis. Mauris auctor enim sit amet leo condimentum facilisis. In tempor nunc in purus feugiat, non porttitor arcu condimentum. Vivamus a convallis nisl. Etiam sapien augue, facilisis at fringilla ut, pharetra
+                ut lacus. Phasellus risus odio, gravida id scelerisque non, porttitor faucibus est. Donec sit amet nulla ullamcorper, consequat orci nec, sollicitudin neque. Praesent ac eleifend dui, at porta elit. Ut ultricies auctor est id ultricies.
+                Aliquam mi turpis, lobortis in ex eu, ultrices feugiat ligula. Sed in ligula ullamcorper, varius elit in, semper leo. Donec luctus at enim ac convallis. Praesent non erat fringilla, gravida elit tempus, eleifend ante. In hac habitasse
+                platea dictumst. Donec magna mi, volutpat ac semper ac, sagittis nec tortor. Ut ligula dui, tempus non tempor in, sodales eget magna. Pellentesque viverra dapibus semper. Nulla quis porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Vestibulum sed mauris nisl. Integer nec mi urna. Vivamus ornare lacus ut augue facilisis facilisis. Vivamus in volutpat diam. Integer id nibh et ex vulputate molestie et eget arcu. Proin non tempus sapien, in lobortis sem.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 randomColor larryAndSon">
+                <img src="images/car3.jpg" alt="Larry">
+            </div>
+            <div class="col-md-2 randomColor larryAndSon">
+
+            </div>
+            <div class="col-md-5 randomColor larryAndSon">
+                <img src="images/larry.jpg" alt="Larry'son">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 randomColor larryText">
+                    My son Garry and I are always equiped and ready to provide you with the best whip
+                </div>
+            </div>
+        </div>
+        <footer>All rights belong to Larry the Leaser.inc 2017 </footer>
 
 
-    </div>
 
 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-        function getRandomNumber(min, max) {
-            return Math.floor(Math.random() * max + min);
-        }
-
-        $(document).ready(function() {
-
-            var bodyColumns = $(".randomColor");
-
-            bodyColumns.each(function() {
-
-                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
-            })
-
-            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
-
-        })
-    </script>
 
 
 </body>
