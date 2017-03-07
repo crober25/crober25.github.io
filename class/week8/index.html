@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boolean</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        #carDiv {
+            text-align: center;
+        }
+
+        #skiDiv {
+            text-align: center;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="carDiv" class="col-md-12">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="skiDiv" class="col-md-12">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="animalDiv" class="col-md-12">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var myString = "a string";
+        var myNumber = 2;
+        var myVar = "2";
+        var myBoolean = false;
+        var myVar2 = "true";
+
+        //array; declare with square brackets
+        //declaring an empty array
+        var myArray = [];
+        var myFullArray = ["Calen", "Nicole", "Evan"];
+
+        console.log(myFullArray[0]);
+        console.log("myFullArray 2nd value =" + myFullArray[1]);
+
+        var myMixArray = [3, "David", false];
+        myMixArray.push("another value");
+        console.log("myMixArray values: " + myMixArray);
+
+        //type, price, milage, colour, fuel, src,
+
+        var car = {
+            type: "SUV",
+            Price: 450000,
+            milage: 24,
+            color: "megenta",
+            fuel: "electric",
+            src: "images/car1.jpg",
+            message: function() {
+                console.log("A car is deadly!");
+
+            }
+        };
+
+        console.log(car.type);
+        console.log(car.price);
+        console.log(car.message());
+
+        $(document).ready(function() {
+            /*
+                      $("#carDiv").html("<div id='centerDiv'>");
+                        $("#carDiv").html("<div> +car.type+ </div>");
+                        $("#carDiv").append( "<img src = '"+car.src +"'/>");
+                        $("#carDiv").append("<div>" + car.price + "</div>");
+                        */
+
+            var myHtml = "<div id='centerDiv'>" +
+                "<div> +car.type+ </div>" +
+                "<img src = '" + car.src + "'/>" +
+                "<div>" + car.price + "</div>" +
+                "</div>";
+            $("#carDiv").html(myHtml);
+        });
+    </script>
+
+    <script type="text/javascript">
+        var ski = {
+            type: "Park",
+            Price: 400,
+            color: "blue",
+            src: "images/ski1.jpg",
+        };
+
+        console.log(ski.type);
+        console.log(ski.price);
+
+
+        $(document).ready(function() {
+
+            var myHtml = "<div id='centerDiv'>" +
+                "<div> +ski.type+ </div>" +
+                "<img src = '" + ski.src + "'/>" +
+                "<div>" + ski.price + "</div>" +
+                "</div>";
+
+            $("#skiDiv").html(myHtml);
+        });
+    </script>
+
+    <script type="text/javascript">
+        var animal = {
+            type: "bear",
+            Price: "alot",
+            color: "black",
+            src: "images/animal1.jpg",
+        };
+
+        console.log(animal.type);
+        console.log(animal.price);
+
+
+        $(document).ready(function() {
+
+            var myHtml = "<div id='centerDiv'>" +
+                "<div> +animal.type+ </div>" +
+                "<img src = '" + animal.src + "'/>" +
+                "<div>" + animal.price + "</div>" +
+                "</div>";
+
+            $("#animalDiv").html(myHtml);
+        });
+    </script>
+</body>
+
+</html>
