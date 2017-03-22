@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="c" x1="364.96" x2="444.54" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f00" offset="0"/>
+   <stop stop-color="#f30000" offset=".88889"/>
+   <stop stop-color="#e70000" offset="1"/>
+  </linearGradient>
+  <radialGradient id="b" cx="100" cy="100" r="100" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" stop-opacity="0" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset=".80556"/>
+   <stop stop-color="#b00000" stop-opacity=".73451" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g transform="translate(-278 -354.36)">
+  <path d="m378 453.77s-13.747 8.5172-12.326 23.787c1.4187 15.25 26.717 39.515 35.33 50.738 5.0759 6.6143 7.4053 13.482 8.5069 18.056 12.918-4.4288 24.598-11.543 34.418-20.616-4.1629-3.9797-11.166-10.441-16.667-14.063-8.1821-5.387-33.616-11.743-47.786-25.13-13.78-13.019-1.4757-32.771-1.4757-32.771z" fill="url(#c)" fill-rule="evenodd"/>
+  <path transform="matrix(1.3889 0 0 1.3889 -108.11 -215.59)" d="m420 482.36a70 70 0 1 1 -140 0 70 70 0 1 1 140 0z" fill="#fff" stroke="#f00" stroke-linejoin="round" stroke-width="4"/>
+  <path id="a" d="m378 453.46s-13.747 8.8258-12.326 24.096c1.4187 15.25 26.717 39.515 35.33 50.738 5.0759 6.6143 7.4053 13.482 8.5069 18.056 12.918-4.4288 24.598-11.543 34.418-20.616-4.1629-3.9797-11.166-10.441-16.667-14.063-8.1821-5.387-33.616-11.743-47.786-25.13-13.78-13.019-1.4757-33.08-1.4757-33.08z" fill="#f00" fill-rule="evenodd"/>
+  <use transform="matrix(.70711 .70711 -.70711 .70711 431.36 -134.47)" width="200" height="200" xlink:href="#a"/>
+  <use transform="matrix(0 1 -1 0 831.46 75.459)" width="200" height="200" xlink:href="#a"/>
+  <use transform="matrix(-.70711 .70711 -.70711 -.70711 965.93 506.82)" width="200" height="200" xlink:href="#a"/>
+  <use transform="matrix(-1 0 0 -1 756 906.92)" width="200" height="200" xlink:href="#a"/>
+  <use transform="matrix(-.70711 -.70711 .70711 -.70711 324.64 1041.4)" width="200" height="200" xlink:href="#a"/>
+  <use transform="matrix(0 -1 1 0 -75.459 831.46)" width="200" height="200" xlink:href="#a"/>
+  <use transform="matrix(.70711 -.70711 .70711 .70711 -209.93 400.1)" width="200" height="200" xlink:href="#a"/>
+  <path transform="translate(278 354.36)" d="m200 100a100 100 0 1 1 -200 0 100 100 0 1 1 200 0z" fill="url(#b)"/>
+ </g>
+</svg>
