@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 11</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+
+    <style media="screen">
+        .row1 {
+            height: 250px;
+        }
+
+        .row3 {
+            height: 250px;
+        }
+
+        .row2 {
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 randomColor  row1">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2 randomColor row2">
+
+            </div>
+            <div class="col-md-8 randomColor row2">
+
+            </div>
+            <div class="col-md-2 randomColor row2">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 randomColor row3">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+    <script type="text/javascript">
+        var url = "https://andersonguelphjs.github.io/class/week12/myJson.json";
+
+        //we use get for an html file
+        //we use getJSON for a .json file
+        $.getJSON(url)
+            .done(function(data) {
+                console.log("success!");
+                console.dir(data);
+            })
+            var myHtml = "";
+            for (var i = 0; i < 12; i = i + 1) {
+                console.log("src:  " + data.data[i].embed_url);
+                myHtml += "<div class='playerData'>"
+
+                myHtml += "</div'>"
+            }
+
+            $("body").append(myHtml);
+            })
+
+            .fail(function(data) {
+                console.log("fail!");
+                console.dir(data);
+            })
+    </script>
+</body>
+
+</html>
